@@ -35,16 +35,16 @@
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
+
+                <p id="demos"></p>
             </div>
 
 
             <script type="text/javascript">
-                // display prompt box that ask for name and 
-                // store result in a variable called who
-                var who = window.prompt("What is your name");
-
                 // write "Hello" followed by person' name to browser window
-                document.write("Hello " + who);
+                document.getElementById("demos").innerHTML = "Hello world.";
+
+                console.log(5 + 6);
             </script>
 
         </div>
